@@ -17,6 +17,7 @@ rl.question(chalk.yellow('Nickname to check: '), (nickname) => {
     process.exit(1);
   }
 
+
   https.get(`https://api.mojang.com/users/profiles/minecraft/${nickname}`, (response) => {
     if (response.statusCode === 404) {
       console.log(chalk.green(`[INFO] ${nickname} is not taken on Minecraft`));
