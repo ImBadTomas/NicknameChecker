@@ -7,8 +7,8 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-console.log(chalk.white("We are currently supporting Discord, Minecraft, and YouTube checker"));
-console.log(chalk.white("Too many soon <3  /  Made with love and with spotify by IBadTomas"));
+console.log(chalk.white("We are currently supporti Discord, Minecraft checker"));
+console.log(chalk.white("We are using MojangAPI and LixqaAPI"));
 checker()
 
 function checker() {
@@ -46,7 +46,7 @@ function checker() {
           }
         });
       }).on('error', (error) => {
-        console.log(chalk.red(`An error occurred while accessing Discord API: ${error}`));
+        console.log(chalk.red(`An error occurred while accessing Lixqa API: ${error}`));
         process.exit(1);
       });
     }).on('error', (error) => {
